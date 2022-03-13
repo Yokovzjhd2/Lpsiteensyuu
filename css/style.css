@@ -9,7 +9,7 @@ a {
   justify-content: space-between;
   align-items: center;
   height: 45px;
-  padding: 0 15px;
+  padding: 0;
   background-color: white;
   color: gray;
 }
@@ -30,8 +30,8 @@ a {
   padding-right: 15px;
 }
 
-.page1 {
-  margin-bottom: 250px;
+#page1 {
+  margin-bottom: 380px;
   position: relative;
   height: 500px;
 }
@@ -79,7 +79,8 @@ a {
   width: 60%;
 }
 
-.page2 {
+#page2 {
+  width: 40%;
   margin: 0 auto 50px;
   text-align: center;
 }
@@ -92,8 +93,9 @@ a {
 }
 
 .news-ttl-set {
-  margin-right: 570px;
+  text-align: left;
 }
+
 .news-ttl {
   color: gray;
   font-size: 35px;
@@ -124,7 +126,7 @@ a {
   color: white;
   padding: 10px 15px;
   margin: auto 20px;
-  height: 5px;
+  line-height: 10px;
   justify-content: center;
 }
 
@@ -140,7 +142,7 @@ a {
   padding: 5px 0;
 }
 
-.page3 {
+#page3 {
   text-align: center;
   background-color: whitesmoke;
   position: relative;
@@ -172,9 +174,10 @@ a {
   z-index: 0;
   position: absolute;
   right: 0;
-  width: 35%;
+  width: 33%;
   display: flex;
   margin-right: 50px;
+  margin-top: 30px;
 }
 
 .about-text-set {
@@ -183,13 +186,14 @@ a {
   color: gray;
   padding-left: 250px;
   line-height: 27px;
+  font-size: 20px;
 }
 
 .about-text1 {
-  margin-bottom: 30px;
+  margin: 30px 0;
 }
 
-.page4 {
+#page4 {
   margin: 100px auto;
 }
 
@@ -198,6 +202,7 @@ a {
   font-family: "Indie Flower", cursive;
   font-size: 1.6vw;
   color: mediumvioletred;
+  margin-bottom: 20px;
 }
 .service-ttl {
   color: gray;
@@ -237,20 +242,23 @@ a {
 }
 
 .box1-img {
-  width: 130px;
+  width: 145px;
   height: 180x;
+  margin: 40px auto 15px;
 }
 
 .box2-img {
-  width: 130px;
+  width: 145px;
   height: 180x;
   float: left;
+  margin: 40px 15px;
 }
 
 .box3-img {
-  width: 130px;
+  width: 145px;
   height: 180x;
   float: left;
+  margin: 40px 15px;
 }
 
 .box1-ttl,
@@ -260,11 +268,25 @@ a {
   padding: 25px 0;
 }
 
+.box1-text,
+.box2-text,
+.box3-text {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.service-box2-text-set,
+.service-box3-text-set {
+  margin-top: 25px;
+  align-items: center;
+}
+
 .blog {
   font-family: "Gorditas", cursive;
   font-family: "Indie Flower", cursive;
   font-size: 1.6vw;
   color: mediumvioletred;
+  margin-bottom: 20px;
 }
 .blog-ttl {
   color: gray;
@@ -272,7 +294,7 @@ a {
   line-height: 30px;
 }
 
-.page5 {
+#page5 {
   background-color: whitesmoke;
   position: relative;
   height: 800px;
@@ -294,7 +316,7 @@ a {
   position: absolute;
   background-color: mediumvioletred;
   color: white;
-  height: 30px;
+  line-height: 30px;
   width: 80px;
   font-size: 15px;
   text-align: center;
@@ -306,11 +328,8 @@ a {
   border-radius: 10px 10px 0 0;
 }
 
-.card-content {
-  padding: 15px 25px;
-}
-
 .card-content-ttl {
+  padding: 0 10px;
   font-size: 18px;
   margin: 40px auto;
   font-weight: 400;
@@ -318,8 +337,9 @@ a {
 }
 
 .card-content-tag {
+  padding: 30px 0;
   font-size: 14px;
-  text-align: right;
+  justify-content: space-between;
 }
 
 .card-content-tag-item {
@@ -329,9 +349,7 @@ a {
 
 .card-content-tag-item--last {
   display: inline-block;
-  margin-left: 20px;
   color: #888888;
-  text-align: left;
 }
 
 .flex {
@@ -356,14 +374,15 @@ a {
   margin: 100px auto;
 }
 
-.page6 {
-  margin: 60px auto;
+#page6 {
+  margin: 60px auto 0;
 }
 .company {
   font-family: "Gorditas", cursive;
   font-family: "Indie Flower", cursive;
   font-size: 1.6vw;
   color: mediumvioletred;
+  margin-bottom: 20px;
 }
 .company-ttl {
   color: gray;
@@ -389,7 +408,7 @@ table th {
   background-color: #dedede;
 }
 
-.page7 {
+#page7 {
   margin: 80px auto;
 }
 .box-img {
@@ -439,7 +458,7 @@ table th {
   position: relative;
   background: linear-gradient(90deg, hotpink, mediumvioletred);
   width: 200px;
-  height: 25px;
+  line-height: 25px;
   box-shadow: 0 7px 0 darkmagenta;
   display: block;
   padding: 18px;
@@ -448,7 +467,7 @@ table th {
   color: #fff;
   font-size: 16px;
   border-radius: 30px;
-  margin: 20px auto;
+  margin: 25px auto 100px;
 }
 
 .contact-btn::after {
@@ -465,7 +484,7 @@ table th {
 
 .footer {
   width: 100%;
-  height: 40px;
+  line-height: 40px;
   color: gray;
   text-align: center;
   font-size: 12px;
